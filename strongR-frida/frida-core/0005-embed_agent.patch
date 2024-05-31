@@ -31,8 +31,8 @@ index 6fc96a9b..e08134e9 100644
 +            binary = lief.parse(embedded_agent)
 +
 +            if not binary:
-+                exit()
-+
++                embedded_assets += [embedded_agent]
++                continue
 +            for symbol in binary.symbols:
 +                if symbol.name == "frida_agent_main":
 +                    symbol.name = "main"
