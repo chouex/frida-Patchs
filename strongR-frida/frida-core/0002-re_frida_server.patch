@@ -16,7 +16,7 @@ index 525c145e..7faa7476 100644
  	private static Application application;
  
 -	private const string DEFAULT_DIRECTORY = "re.frida.server";
-+	private const string DEFAULT_DIRECTORY = null;
++	private string DEFAULT_DIRECTORY = null;
  	private static bool output_version = false;
  	private static string? listen_address = null;
  	private static string? certpath = null;
